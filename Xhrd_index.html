@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); 
+      body { 
+          font-family: 'Noto Sans KR', sans-serif;
+      } 
+      p { 
+          font-family: 'Noto Sans KR', sans-serif;
+      }
+      a {
+        font-family: 'Noto Sans KR', sans-serif;
+        text-decoration: none;
+      }
+     
+      /*헤더.*/
+      .header-wrapper {
+          width: 100%;
+          margin-left: 16px;
+      }
+      .main-logo-wrapper {
+          width: 100%;
+          margin-top: 32px;
+      }
+      .main-logo {
+          width: 120px;
+      }
+      /*메인타이틀.*/
+      .main-title-wrapper {
+          width: 100%;
+          height: atuo;
+          margin-top: 20px;
+      }
+      .main-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: black
+      }
+      /*----------------------컨텐츠1 가장 큰 보드.------------------------*/
+      .content1-wrapper {
+          height: auto;
+          margin: 16px;
+          border-radius: 16px;
+          background-color: white;
+          box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.08);
+          display: block;
+          overflow: hidden;
+      }
+      .content2-wrapper {
+          float: left;
+          width: 328px;
+          height: 218px;
+          margin: 16px;
+          border-radius: 16px;
+          background-color: white;
+          box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.08);
+          display: block;
+          overflow: hidden;
+      }
+       /*컨텐츠1-텍스트.*/
+      .content-text-wrapper {
+          text-align: left;
+          padding: 16px;
+          height: 200px;
+      }
+      .content-title {
+          display: table;
+          height: 60px;
+      }
+      .content-title-img {
+          display: none;
+      }
+      /*----------------------컨텐츠1 서브타이틀 버튼묶음.------------------------*/
+      .content-app-wrapper {  
+          
+      }
+      .content-subtitle-wrapper {
+          width: 100%;
+          height: 80px;
+      }
+      .content-subtitle {
+          float: left;
+          display: table;
+          height: 36px;  
+          margin-bottom: 8px;
+      }
+      .content-button-wrapper {
+          width: 40%;
+          float: right;
+      }
+      .content-button {
+          width: 80px;
+          height: 46px;
+          background-color: white;
+          border-radius: 16px;
+          border: 0px;
+          float: right;
+      }
+      .content-button:hover {
+          width: 80px;
+          height: 46px;
+          background-color: rgba(97, 150, 255, 0.12);
+      }
+      .button-text {
+          color: #6196FF;
+          font-weight: 700;
+      }
+      .content-subtitle-text {
+          background-color: rgba(0, 0, 0, 0.04);
+          border-radius: 16px;
+          width: 80px;
+          text-align: center;
+          display:table-cell;
+          vertical-align:middle;
+          margin-top: 8px;
+      }
+      .content-tag {
+          color: rgba(0, 0, 0, 0.38);
+      }
+       /*컨텐츠1-이미지.*/
+      .content1-img-wrapper {
+          width: 100%;
+          height: 80%;
+          display: flex;
+      }
+      .content1-img {
+          object-fit: cover;  
+          overflow: hidden;
+      }
+      .content2-img {
+          object-fit: cover;  
+          overflow: hidden;
+          display: none;
+      }
+      /*----------------------컨텐츠1 가장 큰 보드 끝.------------------------*/
+      /*그리드 콘트롤.*/
+      .container {
+          display: grid;
+          grid-template-columns: 1fr 360px 360px 360px 360px 1fr;
+          grid-template-rows: repeat(100, 125px);
+      }
+      .item-1 {
+          grid-column: 2 / 6;
+          grid-row: 1 / 2;
+          background-color: none;
+      }
+      .item-2 {
+          grid-column: 2 / 6;
+          grid-row: 2 / 4;
+          background-color: none;
+      }
+      .item-3 {
+          grid-column: 2 / 4;
+          grid-row: 4 / 10;
+          background-color: none;
+      }
+      .item-4 {
+          grid-column: 4 / 6;
+          grid-row: 4 / 10;
+          background-color: none;
+      }
+      .item-5 {
+          grid-column: 2 / 6;
+          grid-row: 10 / 14;
+          background-color: blue;
+      }
+      .item-6 {
+          grid-column: 2 / 6;
+          grid-row: 14 / 18;
+          background-color: purple;
+      }
+      @media only screen and (max-width: 1500px){
+          .container {
+              grid-template-columns: 1fr 360px 360px 360px 1fr;
+          } 
+          .item-1 {
+              grid-column: 2 / 5;
+              grid-row: 1 / 2;
+          }
+          .item-2 {
+              grid-column: 2 / 4;
+          }
+          .i
+          .item-3 {
+              grid-column: 2 / 4;
+              grid-row: 4 / 12;
+          }
+          .item-4 {
+              grid-column: 4 / 4;
+              grid-row: 4 / 12;
+          }
+          .item-5 {
+              grid-column: 2 / 5;
+              grid-row: 12 / 16;
+          }
+          .item-6 {
+              grid-column: 2 / 5;
+          }
+      }
+      @media only screen and (max-width: 1100px){
+          .container {
+              grid-template-columns: 1fr 360px 360px 1fr;
+          } 
+          .item-1 {
+              grid-column: 2 / 4;
+              grid-row: 1 / 2;
+          }
+          .item-2 {
+              grid-column: 2 / 4;
+              grid-row: 2 / 4;
+          }
+          .item-3 {
+              grid-column: 2 / 4;
+              grid-row: 4 / 10;
+          }
+          .item-4 {
+              grid-column: 2 / 4;
+              grid-row: 10 / 14;
+          }
+          .item-5 {
+              grid-column: 2 / 4;
+              grid-row: 14 / 18;
+          }
+          .item-6 {
+              grid-column: 2 / 4;
+          }
+      }
+      @media only screen and (max-width: 760px){
+          .container {
+              grid-template-columns: 1fr 360px 1fr;
+          } 
+          .item-1 {
+              grid-column: 2 / 3;
+              grid-row: 1 / 2;
+          }
+          .item-2 {
+              grid-column: 2 / 3;
+              grid-row: 2 / 3;
+          }
+          .item-3 {
+              grid-column: 2 / 3;
+              grid-row: 3 / 7;
+          }
+          .item-4 {
+              grid-column: 2 / 3;
+              grid-row: 7 / 13;
+          }
+          .item-5 {
+              grid-column: 2 / 3;
+              grid-row: 13 / 17;
+          }
+          .item-6 {
+              grid-column: 2 / 3;
+              grid-row: 17 / 21;
+          }
+          .main-title {
+            font-size: 2rem;
+         }
+      }
+      /*그리드 콘트롤 끝.*/
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <div class="header-wrapper">
+                <div class="main-logo-wrapper">
+                    <img src="https://wecruit-public.s3.ap-northeast-2.amazonaws.com/rookiechecker_contents/xhrdlogo+%E2%80%93+1.svg" class="main-logo">
+                </div>
+            </div>
+        </div>
+        <div class="item-2">
+            <div class="header-wrapper">
+                <div class="main-title-wrapper">
+                    <p class="main-title">사람과 일을 </p>
+                    <p class="main-title">기술로 연결합니다</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-3">
+            <div class="content1-wrapper">
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+                <div class="content1-img-wrapper">
+                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="content1-img">
+                </div>
+            </div>
+        </div>
+        <div class="item-4">
+            <div class="content2-wrapper">
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+                <div class="content1-img-wrapper">
+                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="content2-img">
+                </div>
+            </div>
+            <div class="content2-wrapper">
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+                <div class="content1-img-wrapper">
+                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="content2-img">
+                </div>
+            </div>
+            <div class="content2-wrapper">
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+                <div class="content1-img-wrapper">
+                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="content2-img">
+                </div>
+            </div>
+            <div class="content2-wrapper">
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+                <div class="content1-img-wrapper">
+                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="content2-img">
+                </div>
+            </div>
+        </div>
+        <div class="item-4">  </div>
+        <div class="item-5"> item-5 </div>
+        <div class="item-6"> item-5 </div>
+    </div>
+</body>
+</html>

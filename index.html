@@ -67,6 +67,17 @@
           display: block;
           overflow: hidden;
       }
+      .content3-wrapper {
+          height: 96%;
+          margin: 16px;
+          border-radius: 16px;
+          background: url("https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2");
+          background-size: 100% 120%;
+          background-position: center;
+          box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.08);
+          display: block;
+          overflow: hidden;
+      }
        /*컨텐츠1-텍스트.*/
       .content-text-wrapper {
           text-align: left;
@@ -172,11 +183,11 @@
       .item-5 {
           grid-column: 2 / 6;
           grid-row: 10 / 14;
-          background-color: blue;
+          background-color: none;
       }
       .item-6 {
           grid-column: 2 / 6;
-          grid-row: 14 / 18;
+          grid-row: 14 / 16;
           background-color: purple;
       }
       @media only screen and (max-width: 1500px){
@@ -205,6 +216,7 @@
           }
           .item-6 {
               grid-column: 2 / 5;
+              grid-row: 16 / 18;
           }
       }
       @media only screen and (max-width: 1100px){
@@ -233,6 +245,7 @@
           }
           .item-6 {
               grid-column: 2 / 4;
+              grid-row: 14 / 16;
           }
       }
       @media only screen and (max-width: 760px){
@@ -265,8 +278,8 @@
           }
           .main-title {
             font-size: 2rem;
-         }
-         .content1-wrapper {
+          }
+          .content1-wrapper {
           height: auto;
           margin: 16px;
           border-radius: 16px;
@@ -274,7 +287,7 @@
           box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.08);
           display: block;
           overflow: hidden;
-      }
+          }
       }
       /*그리드 콘트롤 끝.*/
   </style>
@@ -425,8 +438,33 @@
                 </div>
             </div>
         </div>
-        <div class="item-4">  </div>
-        <div class="item-5"> item-5 </div>
+        <div class="item-5">
+            <div class="content3-wrapper">
+                <div class="content3-img-wrapper">
+                    <img src="">
+                </div>
+                <div class="content-text-wrapper">
+                    <div class="content-app-wrapper">
+                        <div class="content-subtitle-wrapper">
+                            <div class="content-subtitle">
+                                <h1>💎</h1>
+                                <div class="content-subtitle-text">subtitle</div>
+                            </div>
+                            <div class="content-button-wrapper">
+                                <button class="content-button">
+                                    <a href="www.naver.com" class="button-text">more +</a>                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-title">
+                        <img src="" class="content-title-img">
+                        <h1>This is the title.</h1>
+                    </div>
+                    <div class="content-tag">#content1#tag</div>
+                </div>
+            </div>
+        </div>
         <div class="item-6"> item-5 </div>
     </div>
 </body>

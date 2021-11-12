@@ -74,7 +74,7 @@
     width: 608px;
     height: 568px;
     margin: 16px;
-    border-radius: 16px;
+    
 }
 .box-1-shadow:hover {
     animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both
@@ -193,28 +193,6 @@
     display:table-cell;
     vertical-align:middle;
     margin-top: 8px;
-}
-.box-button-wrapper {
-    width: 40%;
-    float: right;
-}
-.box-button {
-    width: 80px;
-    height: 40px;
-    background-color: white;
-    border-radius: 12px;
-    font-size: 16px;
-    border: 0px;
-    float: right;
-}
-.box-button:hover {
-    width: 80px;
-    height: 40px;
-    background-color: rgba(97, 150, 255, 0.12);
-}
-.button-text {
-    color: #6196FF;
-    font-weight: 700;
 }
 .box-tag-wrapper {
     height: 56px;

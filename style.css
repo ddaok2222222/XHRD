@@ -74,7 +74,7 @@
     width: 608px;
     height: 568px;
     margin: 16px;
-    
+    border-radius: 16px;
 }
 .box-1-shadow:hover {
     animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both

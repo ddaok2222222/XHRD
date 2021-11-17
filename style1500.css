@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1500px){
+    /*----------------------
+            그리드 제어.
+    ------------------------*/
+    .container {
+        grid-template-columns: 1fr 320px 320px 320px 1fr;
+    } 
+    .section-mainlogo {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+    }
+    .section-maintitle {
+        grid-column: 2 / 4;
+    }
+    .section-1 {
+        grid-column: 2 / 4;
+        grid-row: 4 / 10;
+    }
+    .section-2 {
+        grid-column: 4 / 4;
+        grid-row: 4 / 12;
+    }
+    .section-3 {
+        grid-column: 2 / 5;
+        grid-row: 12 / 16;
+    }
+    .section-4 {
+        grid-column: 2 / 4;
+        grid-row: 16 / 20;
+    }
+    .section-5 {
+        grid-column: 4 / 5;
+        grid-row: 16 / 20;
+    }
+    .section-6 {
+        grid-column: 2 / 5;
+        grid-row: 20 / 26;
+    }
+    /*----------------------
+            그리드 제어 끝.
+    ------------------------*/
+    /*----------------------
+            박스 제어.
+    ------------------------*/
+    .box-1 {
+        animation: slide-bl-1500 .5s cubic-bezier(.25,.46,.45,.94)  0.00s both;
+    }
+    .box-2 {
+        animation: slide-bl0-1500 .5s cubic-bezier(.25,.46,.45,.94)  0.04s both;
+    }
+    .box-2-1 {
+        animation: slide-bl0-1-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.08s both;
+    }
+    .box-2-2 {
+        animation: slide-bl0-2-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.12s both;
+    }
+    .box-2-3 {
+        animation: slide-bl0-3-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.16s both;
+    }
+    .box-3 {
+        animation: slide-bl1-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.20s both;
+    }
+    .box-4 {
+        /* background: url("https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb5113e4d-400e-43b1-bb69-455838950153%2Fcontent3-cover.png?table=block&id=6844f0f3-c6e9-40e9-9416-f8b466c8033c&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2"); */
+        /* background-size: auto auto; */
+        /* background-position: right; */
+        animation: slide-bl2-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.24s both;
+    }
+    .box-5 {
+        /* background: url("https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb5113e4d-400e-43b1-bb69-455838950153%2Fcontent3-cover.png?table=block&id=6844f0f3-c6e9-40e9-9416-f8b466c8033c&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2"); */
+        /* background-size: auto auto; */
+        /* background-position: right; */
+        animation: slide-bl3-1500 .5s cubic-bezier(.25,.46,.45,.94) 0.28s both;
+    }
+    .box-5 h1 {
+        font-size: 20px;
+    }
+    /*----------------------
+            박스 제어 끝.
+    ------------------------*/
+    /*----------------------
+            푸터 제어.
+    ------------------------*/
+
+    .container2 {
+        grid-template-columns: 1fr repeat(4, 240px) 1fr;
+    }
+    .section-7 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 6;
+        background-color: none;
+    }
+    .section-8 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 6;
+        background-color: none;
+    }
+    .section-9 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 6;
+        background-color: none;
+    }
+    .section-10 {
+        grid-column: 5 / 6;
+        grid-row: 1 / 6;
+        background-color: none;
+    }
+    .section-11 {
+        grid-column: 2 / 5;
+        grid-row: 6 / 7;
+        background-color: none;
+    }
+    .section-12 {
+        grid-column: 5 / 6;
+        grid-row: 6 / 8;
+        background-color: none;
+    }
+    .section-13 {
+        grid-column: 2 / 5;
+        grid-row: 7 / 8;
+        background-color: none;
+    }
+}
+/*----------------------
+        박스 제어 끝.
+------------------------*/

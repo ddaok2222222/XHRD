@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wecruitcorp</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                letter-spacing: -0.5px;
+            }
+            body { 
+            font-family: 'Noto Sans KR', sans-serif;
+            } 
+            p { 
+                
+            }
+            a {
+
+            }
+            h1 {
+                
+            }
+            li {
+                list-style: none;
+            }
+            footer {
+                padding-top: 16px;
+                border-top: rgba(0, 0, 0, 0.08) solid 1px;
+            }
+            /* 모바일 수평 스크롤 금지 */
+            html, body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+        </style>
+        <script type="text/javascript">
+            const mainlogo = document.querySelector('.section-mainlogo');
+            const maintitle = document.querySelector('.section-maintitle');
+            const section3 = document.querySelector('.section-3');
+            const section1 = document.querySelector('.section-1');
+
+            // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
+            const contentTop = section3.getBoundingClientRect().top + window.scrollY;
+
+            window.addEventListener('scroll', function(){
+            if(window.scrollY >= contentTop){
+                section1.classList.remove('fixed');
+                mainlogo.classList.remove('fixed');
+                maintitle.classList.remove('fixed');
+    
+            }else{
+                section1.classList.add('fixed');
+                mainlogo.classList.add('fixed');
+                maintitle.classList.add('fixed');
+            }
+            });
+        </script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <article>
+            <div class="container">
+                <section class="section-mainlogo">
+                    <div id="main-logo-wrapper">
+                        <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffdcaba23-36ef-487a-b8c9-463d000e7dd9%2Fwecruit_logo.png?table=block&id=f10474b7-ca81-42e7-9207-43d52f9fcfbd&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=1470&userId=&cache=v2" id="main-logo">
+                    </div>
+                </section>
+                <section class="section-maintitle">
+                    <div class="main-title-wrapper">
+                        <p class="main-title">사람과 일을 </p>
+                        <p class="main-title">기술로 연결합니다</p>
+                    </div>
+                </section>
+                <section class="section-1">
+                    <div class="box-1-shadow">
+                        <div class="box-1">
+                            <div class="largebox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Feaa41ced-3aa3-438b-8116-4c2c29e7adfb%2Fww__2.png?table=block&id=37c0b03f-c31a-4541-b3e3-94a58185df9b&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">위크루트 스토리</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="largebox-title">알맞은 곳에</h1>
+                                    <h1 class="largebox-title">알맞은 사람이 채용될수 있도록.</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#위크루트 #연결합니다 #사람 #일</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5657da2-3cb1-4bbb-b5e9-8428f4e27700%2Fbox-1-img.png?table=block&id=73677420-4cb2-44fe-9156-daec18cbbe91&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=1220&userId=&cache=v2" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="box-2-shadow">
+                        <div class="box-2">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F432e9b7f-f38b-4a53-add5-c2bb83fd6c69%2Fcp.png?table=block&id=0081cc43-374a-4620-8d3d-1c52a4512346&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">서비스</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="smallbox-title">체커 프리미엄</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#하이엔드 #관리자직급 #수작업</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4c1d4c44-7d21-43bf-8a6a-db2c0338f72a%2Fpremium.png?table=block&id=34e5f1db-0766-46ed-939b-6a7b723986f7&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=960&userId=&cache=v2" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2-1-shadow">
+                        <div class="box-2-1">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb7976200-d7e8-419e-bd78-ed19f6be9810%2Fww__1.png?table=block&id=b3c9a2ea-82ce-4b08-868d-f507ab20e433&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">빠른문의</p>
+                                    </div>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <button class="box-qa-button">
+                                        인재검증
+                                    </button>
+                                    <button class="box-qa-button">
+                                        헤드헌팅
+                                    </button>
+                                    <button class="box-qa-button">
+                                        루키체커
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="box-img-test">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2-2-shadow">
+                        <div class="box-2-2">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F72b63cc3-4fab-4d81-a1d7-da03c51d21fe%2Fca.png?table=block&id=0866dd40-0898-49f8-9d81-1343ff5f7dfd&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">서비스</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="smallbox-title">체커 오토</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#솔루션 #자동화 #빠른처리</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2-3-shadow">
+                        <div class="box-2-3">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F469616a8-de53-4267-ae58-05075a8e8166%2Fwh.png?table=block&id=0fd7b8be-7e49-450b-ae71-67d887c4d93f&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">서비스</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="smallbox-title">헌터스</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#헤드헌팅플랫폼 #국내최대 #관리도구</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F679cbafb-6065-4d01-97bf-38dc0c92f8a1%2Fbox-1-cover.png?table=block&id=b55b96c4-3bed-43b0-81b7-84fabaab4c9d&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=1220&userId=&cache=v2" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2-4-shadow">
+                        <div class="box-2-4">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8faf2e63-1792-45b6-adf5-7fdd8a86a35b%2Flc.png?table=block&id=18c87ab1-5839-45fe-a37a-860818c6624d&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">서비스</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="smallbox-title">루키체커</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#플랫폼 #신입 #알바</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2-5-shadow">
+                        <div class="box-2-5">
+                            <div class="smallbox-head-wrapper">
+                                <div class="box-property-wrapper">
+                                    <div class="box-subtitle-wrapper">
+                                        <div class="box-subtitle-logo">
+                                            <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8faf2e63-1792-45b6-adf5-7fdd8a86a35b%2Flc.png?table=block&id=18c87ab1-5839-45fe-a37a-860818c6624d&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=80&userId=&cache=v2" class="subtitle-logo">
+                                        </div>
+                                        <p class="box-subtitle">서비스</p>
+                                    </div>
+                                </div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="smallbox-title">신규 서비스</h1>
+                                </div>
+                                <div class="box-tag-wrapper">
+                                    <div class="box-tag">#플랫폼 #신입 #알바</div>
+                                </div>
+                            </div>
+                            <div class="box-body-wrapper">
+                                <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F877e0bca-ccf6-47fe-88ce-a250baf23266%2Fbg-32x.png?table=block&id=0e7bc170-6be1-4826-8a4f-bcd5958e5587&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&width=2000&userId=&cache=v2" class="box-img-test">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-3">
+                    <div class="box-3-shadow">
+                        <div class="box-3">
+                            <div class="centerlargebox-head-wrapper">
+                                <div class="content3-img-wrapper"></div>
+                                <div class="centerlargebox-title-wrapper">
+                                    <h1 class="largebox-title">기술과 검증으로</h1>
+                                    <h1 class="largebox-title">사람과 사람을 연결합니다</h1>
+                                </div>
+                                <div class="centerlargebox-button-wrapper">
+                                    <div class="centerlargebox-button">
+                                        <span id="button-text">서비스 바로가기</span>
+                                        <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd6a2371f-9a7e-4af9-8cc7-390eb76bc322%2Farrow_right.svg?table=block&id=d4209651-1ba7-4932-8690-aafa60435434&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&userId=&cache=v2" id="icon-arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-4">
+                    <div class="box-4-shadow">
+                        <div class="box-4">
+                            <div class="extrabox-head-wrapper">
+                                <div class="content3-img-wrapper"></div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="largebox-title">위크루트의 모든 서비스를</h1>
+                                    <h1 class="largebox-title">살펴보세요</h1>
+                                </div>
+                            </div>
+                            <div class="box-button-wrapper">
+                                <div class="box-button">
+                                    <span id="button-text">서비스 바로가기</span>
+                                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd6a2371f-9a7e-4af9-8cc7-390eb76bc322%2Farrow_right.svg?table=block&id=d4209651-1ba7-4932-8690-aafa60435434&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&userId=&cache=v2" id="icon-arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-5">
+                    <div class="box-5-shadow">
+                        <div class="box-5">
+                            <div class="extrabox-head-wrapper">
+                                <div class="content3-img-wrapper"></div>
+                                <div class="box-title-wrapper">
+                                    <h1 class="largebox-title">채용의 판도를 바꾸고싶다면</h1>
+                                    <h1 class="largebox-title">당신은 이미 위크루트 크루</h1>
+                                </div>
+                            </div>
+                            <div class="box-button-wrapper">
+                                <div class="box-button">
+                                    <span id="button-text">서비스 바로가기</span>
+                                    <img src="https://malleable-currant-5dc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd6a2371f-9a7e-4af9-8cc7-390eb76bc322%2Farrow_right.svg?table=block&id=d4209651-1ba7-4932-8690-aafa60435434&spaceId=a43e8e99-3697-4b79-ac94-491decf6ba64&userId=&cache=v2" id="icon-arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-6">
+                    <div class="box-6">
+                        <div class="largebox-head-wrapper-center">
+                            <div class="content3-img-wrapper"></div>
+                            <div class="question-button-wrapper">
+                                 <button class="question-button">위크루트 서비스 문의하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <footer>
+            <div class="container2">
+                <section class="section-7">
+                    <div class="footer-section-wrapper">
+                        <ul class="footer-content-wrapper">
+                            <li class="footer-section-title">위크루트</li>
+                            <li>위크루트 문화</li>
+                            <li>공동체</li>
+                            <li>히스토리</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section-8">
+                    <div class="footer-section-wrapper">
+                        <ul class="footer-content-wrapper">
+                            <li class="footer-section-title">뉴스</li>
+                            <li>언론</li>
+                            <li>블로그</li>
+                            <li>위크루트TV</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section-9">
+                    <div class="footer-section-wrapper">
+                        <ul class="footer-content-wrapper">
+                            <li class="footer-section-title">기술과 서비스</li>
+                            <li>기술</li>
+                            <li>서비스</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section-10">
+                    <div class="footer-section-wrapper">
+                        <ul class="footer-content-wrapper">
+                            <li class="footer-section-title">지원</li>
+                            <li>고객센터</li>
+                            <li>문의</li>
+                            <li>인재영입</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section-11">
+                    <div class="footer-section-wrapper-inline">
+                        <div class="footer-content-wrapper-inline">
+                            <div class="f-1">
+                                <div>이용약관</div>
+                                <div id="footer-imporant">개인정보처리방침</div>
+                                <div>운영정책</div>
+                            </div>
+                            <div class="f-2">
+                                <div>공지사항</div>
+                                <div>사이버윤리실</div>
+                                <div>Countact Us</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-12">
+                    <div class="concernsite-button-wrapper">
+                        <button class="concernsite-button">
+                            관련사이트
+                        </button>
+                    </div>
+                </section>
+                <section class="section-13">
+                    <div class="copyright">Wectuitcorp. All rights reserved.</div>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

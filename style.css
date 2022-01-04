@@ -1,0 +1,1373 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@keyframes shadow-drop-2-center-box {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.38);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.4px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #3F4447;
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 36px;
+    margin-top: 128px;
+}
+
+/* 그리드 시작 */
+.container__article {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, 108px) 1fr;
+    grid-template-rows: repeat(340, 10px);
+}
+
+.section__1 {
+    grid-column: 2 / 14;
+    grid-row: 1/ 5;
+    background-color: none;
+}
+
+.section__1-2 {
+    grid-column: 2 / 14;
+    grid-row: 32 / 72;
+    background-color: none;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.section__1-3 {
+    grid-column: 2 / 14;
+    grid-row: 15 / 20;
+    background-color: none;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.section__2 {
+    grid-column: 2 / 14;
+    grid-row: 90 / 100;
+    background-color: none;
+}
+
+.section__2-1 {
+    grid-column: 2 / 5;
+    grid-row: 100 / 140;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__2-1:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__2-2 {
+    grid-column: 5 / 8;
+    grid-row: 100 / 140;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__2-2:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__2-3 {
+    grid-column: 8 / 11;
+    grid-row: 100 / 140;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__2-3:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__2-4 {
+    grid-column: 11 / 14;
+    grid-row: 100 / 140;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__2-4:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__3 {
+    grid-column: 2 / 14;
+    grid-row: 150 / 160;
+    background-color: none;
+}
+
+.section__3-1 {
+    grid-column: 2 / 5;
+    grid-row: 160 / 200;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__3-1:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__3-2 {
+    grid-column: 5 / 8;
+    grid-row: 160 / 200;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__3-2:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__3-3 {
+    grid-column: 8 / 11;
+    grid-row: 160 / 200;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__3-3:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__3-4 {
+    grid-column: 11 / 14;
+    grid-row: 160 / 200;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__3-4:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__4 {
+    grid-column: 2 / 14;
+    grid-row: 210 / 220;
+    background-color: none;
+}
+
+.section__4-1 {
+    grid-column: 2 / 14;
+    grid-row: 220 / 260;
+    background-color: blue;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__4-2 {
+    grid-column: 5 / 8;
+    grid-row: 220 / 260;
+    background-color: green;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__4-2:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__4-3 {
+    grid-column: 8 / 11;
+    grid-row: 220 / 260;
+    background-color: yellow;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__4-3:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__4-4 {
+    grid-column: 11 / 14;
+    grid-row: 220 / 260;
+    background-color: red;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.section__4-4:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__5 {
+    grid-column: 2 / 14;
+    grid-row: 270 / 280;
+    background-color: none;
+}
+
+.section__5-1 {
+    grid-column: 2 / 5;
+    grid-row: 280 / 320;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__5-1:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__5-2 {
+    grid-column: 5 / 8;
+    grid-row: 280 / 320;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__5-2:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__5-3 {
+    grid-column: 8 / 11;
+    grid-row: 280 / 320;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__5-3:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__5-4 {
+    grid-column: 11 / 14;
+    grid-row: 280 / 320;
+    background-color: #2F3437;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__5-4:hover {
+    animation: shadow-drop-2-center-box 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.section__5-5 {
+    grid-column: 2 / 8;
+    grid-row: 330 / 370;
+    background-color: #6196FF;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section__5-6 {
+    grid-column: 8 / 14;
+    grid-row: 330 / 370;
+    background-color: yellow;
+    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 그리드 끝 */
+/* 네비게이션바, 이미지슬라이더 제어 */
+.section__1 .title__wrapper {
+    width: 100%;
+    height: 80px;
+    background-color: none;
+    display: flex;
+}
+
+.section__1 .contents__wrapper {
+    width: 100%;
+    height: 520px;
+    background-color: gray;
+}
+
+.main__logo {
+    width: 160px;
+    height: auto;
+    padding-top: 60px;
+}
+
+/* 네비게이션바, 이미지슬라이더 제어 끝 */
+/* 요소 제어 */
+.title__wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 16px;
+}
+
+.section__5-1 .box__subtitle {
+    padding-top: 16px;
+}
+
+.section__5-2 .box__subtitle {
+    padding-top: 16px;
+}
+
+.section__5-5 .box__title__large {
+    color: black;
+}
+
+.section__5-5 .box__subtitle__large {
+    padding-top: 16px;
+    color: black;
+}
+
+.section__5-6 .box__title__large {
+    color: black;
+}
+
+.section__5-6 .box__subtitle__large {
+    color: black;
+    padding-top: 16px;
+}
+
+
+.section__2-1,
+.section__2-2,
+.section__2-3,
+.section__2-4,
+.section__3-1,
+.section__3-2,
+.section__3-3,
+.section__3-4,
+.section__4-1,
+.section__4-2,
+.section__4-3,
+.section__4-4,
+.section__5-1,
+.section__5-2,
+.section__5-3,
+.section__5-4 {
+    margin: 8px;
+    border-radius: 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section__5-5,
+.section__5-6 {
+    margin: 8px;
+    border-radius: 32px;
+    display: block;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.box__img {
+    width: 100%;
+    height: 44%;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__img__large {
+    display: flex;
+    justify-content: right;
+    padding-right: 48px;
+}
+
+.logo__auto {
+    width: 120px;
+    height: 120px;
+}
+
+.logo__auto2 {
+    width: 240px;
+    height: 240px;
+}
+
+.box__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.box__title__large {
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 48px;
+    padding-top: 48px;
+}
+
+.box__subtitle {
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.box__subtitle__large {
+    font-size: 20px;
+    padding-left: 48px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.box__button__large {
+    padding-left: 48px;
+    padding-top: 24px;
+}
+
+.box__button__large button {
+    font-size: 20px;
+    width: 240px;
+    height: 60px;
+    background-color: black;
+    border: 0px;
+    border-radius: 32px;
+}
+
+.box__button__large button:hover {
+    background-color: #2F3437;
+}
+
+.box__tag {
+    padding-top: 16px;
+}
+
+.tag {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+}
+
+/* 요소 제어 끝 */
+/* 슬라이드제어 */
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    15% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    55% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    95% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+div.slider {
+    overflow: hidden;
+}
+
+div.slider figure .slider__content {
+    width: 20%;
+    float: left;
+}
+
+div.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    object-fit: cover;
+    -webkit-animation: 30s slidy ease-in-out infinite;
+    animation: 30s slidy ease-in-out infinite;
+}
+
+.slider__content {
+    width: 100%;
+    height: 400px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.slider__content .slide__img {
+    width: 50%;
+    height: 100%;
+    background-color: none;
+}
+
+.slide__text__wrapper {
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    padding-left: 64px;
+}
+
+.slide__text__wrapper span {
+    display: flex;
+    padding: 16px;
+    z-index: +1;
+}
+
+.slider__content .slide__title {
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    background-color: none;
+}
+
+.slider__content .slide__subtitle {
+    font-size: 24px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    background-color: none;
+}
+
+.slide__img {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide__img img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1 {
+    background-color: rgb(139, 13, 13);
+}
+
+#slide2 {
+    background-color: #3e6dca;
+}
+
+#slide3 {
+    background-color: rgb(248, 248, 248);
+}
+
+#slide4 {
+    background-color: #2F3437;
+}
+
+#slide5 {
+    background-color: #3e6dca;
+}
+
+.slide__subtitle span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#slide3 span {
+    color: black;
+}
+
+/* 슬라이드제어 끝 */
+/*----------------------
+    푸터 컨텐츠 제어.
+------------------------*/
+.wrapper__footer__section {
+    color: rgba(255, 255, 255, 0.90);
+    line-height: 36px;
+    font-size: 15px;
+}
+
+.wrapper__footer__content__inline {
+    line-height: 36px;
+    font-size: 12px;
+}
+
+.footer__section__title {
+    font-weight: 700;
+}
+
+#footer__imporant {
+    font-weight: 700;
+}
+
+.wrapper__footer__content__inline {
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.button__inline__left {
+    display: inline-flex;
+    gap: 32px;
+}
+
+.button__inline__right {
+    display: inline-flex;
+    gap: 32px;
+    margin-left: 32px;
+}
+
+.wrapper__button__concern {
+    margin: 0;
+}
+
+.button__concern {
+    color: black;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 32px;
+    font-size: 14px;;
+}
+
+.button__qa {
+    width: auto;
+    color: white;
+    font-size: 12px;
+    background-color: #2F3437;
+    padding: 12px;
+    border: none;
+    border-radius: 32px;
+    margin-right: 2px;
+}
+
+.button__qa:hover {
+    background-color: black;
+}
+
+.copyright {
+    font-size: 12px;
+    display: none;
+    color: rgba(255, 255, 255, 0.6);
+    height: 40px;
+    padding-top: 0;
+    display: block;
+}
+
+/*----------------------
+    푸터 컨텐츠 제어 끝.
+------------------------*/
+/*----------------------
+        푸터 제어.
+------------------------*/
+.container__footer {
+    display: grid;
+    grid-template-columns: 1fr repeat(8, 160px) 1fr;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.section__wecruit {
+    grid-column: 2 / 4;
+    grid-row: 1 / 6;
+    background-color: none;
+}
+
+.section__news {
+    grid-column: 4 / 6;
+    grid-row: 1 / 6;
+    background-color: none;
+}
+
+.section__technservice {
+    grid-column: 6 / 8;
+    grid-row: 1 / 6;
+    background-color: none;
+}
+
+.section__help {
+    grid-column: 8 / 10;
+    grid-row: 1 / 6;
+    background-color: none;
+}
+
+.section__inline {
+    grid-column: 2 / 8;
+    grid-row: 6 / 7;
+    background-color: none;
+}
+
+.section__concern {
+    grid-column: 8 / 10;
+    grid-row: 6 / 8;
+    background-color: none;
+}
+
+.section__copyright {
+    grid-column: 2 / 8;
+    grid-row: 7 / 8;
+    background-color: none;
+}
+
+/*----------------------
+        푸터 제어 끝.
+------------------------*/
+
+@media only screen and (max-width: 1366px) {
+    .container__article {
+        grid-template-columns: 1fr repeat(6, 108px) 1fr;
+        grid-template-rows: repeat(400, 10px);
+    }
+
+    .section__1 {
+        grid-column: 2 / 8;
+        grid-row: 1 / 5;
+    }
+
+    .section__1-2 {
+        grid-column: 2 / 8;
+        grid-row: 32 / 72;
+        border-radius: 48px;
+    }
+
+    .section__1-3 {
+        grid-column: 2 / 8;
+    }
+
+    .section__2 {
+        grid-column: 2 / 8;
+        grid-row: 80 / 90;
+    }
+
+    .section__2-1 {
+        grid-column: 2 / 5;
+        grid-row: 90 / 130;
+    }
+
+    .section__2-2 {
+        grid-column: 5 / 8;
+        grid-row: 90 / 130;
+    }
+
+    .section__2-3 {
+        grid-column: 2 / 5;
+        grid-row: 130 / 170;
+    }
+
+    .section__2-4 {
+        grid-column: 5 / 8;
+        grid-row: 130 / 170;
+    }
+
+    .section__3 {
+        grid-column: 2 / 8;
+        grid-row: 180 / 190;
+    }
+
+    .section__3-1 {
+        grid-column: 2 / 5;
+        grid-row: 190 / 230;
+    }
+
+    .section__3-2 {
+        grid-column: 5 / 8;
+        grid-row: 190 / 230;
+    }
+
+    .section__3-3 {
+        grid-column: 2 / 5;
+        grid-row: 230 / 270;
+    }
+
+    .section__3-4 {
+        grid-column: 5 / 8;
+        grid-row: 230 / 270;
+    }
+
+    .section__4 {
+        grid-column: 2 / 8;
+        grid-row: 240 / 250;
+    }
+
+    .section__4-1 {
+        grid-column: 2 / 8;
+        grid-row: 250 / 290;
+    }
+
+    .section__4-2 {
+        grid-column: 5 / 8;
+        grid-row: 250 / 290;
+    }
+
+    .section__4-3 {
+        grid-column: 2 / 5;
+        grid-row: 290 / 330;
+    }
+
+    .section__4-4 {
+        grid-column: 5 / 8;
+        grid-row: 290 / 330;
+    }
+
+    .section__5 {
+        grid-column: 2 / 8;
+        grid-row: 300 / 310;
+    }
+
+    .section__5-1 {
+        grid-column: 2 / 5;
+        grid-row: 310 / 350;
+    }
+
+    .section__5-2 {
+        grid-column: 5 / 8;
+        grid-row: 310 / 350;
+    }
+
+    .section__5-3 {
+        grid-column: 2 / 5;
+        grid-row: 350 / 390;
+    }
+
+    .section__5-4 {
+        grid-column: 5 / 8;
+        grid-row: 350 / 390;
+    }
+
+    .section__5-5 {
+        grid-column: 2 / 8;
+        grid-row: 400 / 440;
+    }
+
+    .section__5-6 {
+        grid-column: 2 / 8;
+        grid-row: 440 / 480;
+    }
+
+    .slider__content .slide__img {
+        width: 40%;
+    }
+
+    .slide__text__wrapper {
+        width: 60%;
+    }
+
+    .slide__text__wrapper {
+        padding-left: 32px;
+    }
+
+
+    .slide__text__wrapper span {
+        padding-right: 16px;
+    }
+
+
+    .slider__content .slide__title {
+        font-size: 28px;
+        height: auto;
+        align-items: flex-start;
+        padding-top: 24px;
+    }
+
+    .slider__content .slide__subtitle {
+        font-size: 16px;
+        align-items: flex-start;
+    }
+
+    .slide__img {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide__img img {
+        width: auto;
+        height: 80%;
+        padding-top: 100px;
+        object-fit: cover;
+    }
+
+    .box__title__large {
+        font-size: 36px;
+        font-weight: 700;
+        padding-left: 48px;
+        padding-top: 48px;
+    }
+
+    .box__subtitle__large {
+        font-size: 20px;
+        padding-left: 48px;
+        padding-top: 8px;
+        padding-bottom: 4px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.83);
+    }
+
+    .box__img__large {
+        display: flex;
+        justify-content: right;
+    }
+
+    .logo__auto2 {
+        width: 240px;
+        height: 240px;
+    }
+
+    .box__button__large {
+        padding-left: 48px;
+        padding-top: 24px;
+    }
+
+    .box__button__large button {
+        font-size: 20px;
+        width: 240px;
+        height: 60px;
+        background-color: black;
+        border: 0px;
+        border-radius: 32px;
+    }
+
+    .box__button__large button:hover {
+        background-color: #2F3437;
+    }
+
+    /*----------------------
+            푸터 제어.
+    ------------------------*/
+    .container__footer {
+        grid-template-columns: 1fr 640px 1fr;
+        grid-template-rows: repeat(14, 100px);
+    }
+
+    .section__wecruit {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        background-color: none;
+    }
+
+    .section__news {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        background-color: none;
+    }
+
+    .section__technservice {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+        background-color: none;
+    }
+
+    .section__help {
+        grid-column: 2 / 3;
+        grid-row: 7 / 9;
+        background-color: none;
+    }
+
+    .section__inline {
+        grid-column: 2 / 3;
+        grid-row: 10 / 13;
+        background-color: none;
+    }
+
+    .section__concern {
+        grid-column: 2 / 3;
+        grid-row: 13 / 14;
+        background-color: none;
+    }
+
+    .section__copyright {
+        grid-column: 2 / 3;
+        grid-row: 14 / 15;
+        background-color: none;
+    }
+
+    .button__concern {
+        width: 288px;
+        height: 40px;
+        border: none;
+        margin: 0 auto;
+        border-radius: 32px;
+        font-size: 14px;
+    }
+
+    .wrapper__footer__content li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .button__concern {
+        width: 640px;
+        border: none;
+        margin: 0 auto;
+        border-radius: 32px;
+        font-size: 14px;
+    }
+
+    .button__inline__left {
+        display: block;
+
+    }
+
+    .button__inline__right {
+        display: block;
+        margin-left: 0;
+    }
+
+    .button__inline__left div {
+        border-bottom: rgba(255, 255, 255, 0.08) 1px solid;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .button__inline__right div {
+        border-bottom: rgba(255, 255, 255, 0.08) 1px solid;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+/*----------------------
+        푸터 제어 끝.
+------------------------*/
+
+@media only screen and (max-width: 720px) {
+    .container__article {
+        grid-template-columns: 1fr repeat(3, 120px) 1fr;
+        grid-template-rows: repeat(450, 10px);
+    }
+
+    .section__1 {
+        grid-column: 2 / 5;
+        grid-row: 1 / 5;
+    }
+
+    .section__1-2 {
+        grid-column: 2 / 5;
+        grid-row: 24 / 64;
+        border-radius: 48px;
+    }
+
+    .section__1-3 {
+        grid-column: 2 / 5;
+        grid-row: 12 / 20;
+    }
+
+    .section__2 {
+        display: none;
+    }
+
+    .section__2-1 {
+        grid-column: 2 / 5;
+        grid-row: 70 / 110;
+    }
+
+    .section__2-2 {
+        grid-column: 2 / 5;
+        grid-row: 110 / 150;
+    }
+
+    .section__2-3 {
+        grid-column: 2 / 5;
+        grid-row: 150 / 190;
+    }
+
+    .section__2-4 {
+        display: none;
+    }
+
+    .section__3 {
+        display: none;
+    }
+
+    .section__3-1 {
+        grid-column: 2 / 5;
+        grid-row: 190 / 230;
+    }
+
+    .section__3-2 {
+        display: none;
+    }
+
+    .section__3-3 {
+        display: none;
+    }
+
+    .section__3-4 {
+        display: none;
+    }
+
+    .section__4 {
+        display: none;
+    }
+
+    .section__4-1 {
+        grid-column: 2 / 5;
+        grid-row: 235 / 275;
+    }
+
+    .section__4-2 {
+        display: none;
+    }
+
+    .section__4-3 {
+        display: none;
+    }
+
+    .section__4-4 {
+        display: none;
+    }
+
+    .section__5 {
+        display: none;
+    }
+
+    .section__5-1 {
+        grid-column: 2 / 5;
+        grid-row: 280 / 320;
+    }
+
+    .section__5-2 {
+        grid-column: 2 / 5;
+        grid-row: 320 / 360;
+    }
+
+    .section__5-3 {
+        grid-column: 2 / 5;
+        grid-row: 360 / 400;
+    }
+
+    .section__5-4 {
+        grid-column: 2 / 5;
+        grid-row: 400 / 440;
+    }
+
+    .section__5-5 {
+        grid-column: 2 / 5;
+        grid-row: 450 / 490;
+    }
+
+    .section__5-6 {
+        grid-column: 2 / 5;
+        grid-row: 490 / 530;
+    }
+
+    div.slider figure .slider__content {
+        width: 20%;
+        height: 400px;
+        float: left;
+        object-fit: cover;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 16px;
+    }
+
+    .slider__content {
+        display: block;
+    }
+
+    .slider__content .slide__img {
+        width: 40%;
+    }
+
+    .slide__text__wrapper {
+        width: 100%;
+        height: 50%;
+    }
+
+
+    .slide__text__wrapper span {
+        padding-right: 64px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    .slider__content .slide__title {
+        font-size: 22px;
+        height: auto;
+        align-items: flex-start;
+        padding-top: 16px;
+    }
+
+    .slider__content .slide__subtitle {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .slider__content .slide__img {
+        width: 100%;
+        height: 50%;
+        background-color: none;
+    }
+
+    .slide__img img {
+        width: auto;
+        height: 100%;
+        padding-top: 0px;
+        object-fit: cover;
+    }
+
+    .box__title__large {
+        font-size: 32px;
+        font-weight: 700;
+        padding-left: 48px;
+        padding-top: 48px;
+        padding-right: 48px;
+    }
+
+    .box__subtitle__large {
+        font-size: 16px;
+        padding-left: 48px;
+        padding-top: 8px;
+        padding-bottom: 4px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.83);
+    }
+
+    .box__img__large {
+        display: none;
+    }
+
+    .box__button__large {
+        padding-top: 64px;
+        padding-bottom: 48px;
+    }
+
+    /*----------------------
+            푸터 제어.
+    ------------------------*/
+    .container__footer {
+        grid-template-columns: 1fr 360px 1fr;
+        grid-template-rows: repeat(14, 100px);
+    }
+
+    .section__wecruit {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        background-color: none;
+    }
+
+    .section__news {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        background-color: none;
+    }
+
+    .section__technservice {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+        background-color: none;
+    }
+
+    .section__help {
+        grid-column: 2 / 3;
+        grid-row: 7 / 9;
+        background-color: none;
+    }
+
+    .section__inline {
+        grid-column: 2 / 3;
+        grid-row: 10 / 13;
+        background-color: none;
+    }
+
+    .section__concern {
+        grid-column: 2 / 3;
+        grid-row: 13 / 14;
+        background-color: none;
+    }
+
+    .button__concern {
+        width: 360px;
+        height: 40px;
+        border: none;
+        margin: 0 auto;
+        border-radius: 32px;
+        font-size: 14px;
+    }
+
+    .wrapper__footer__section {
+        color: rgba(0, 0, 0, 0.90);
+        line-height: 36px;
+        font-size: 15px;
+    }
+
+    .wrapper__footer__content li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .wrapper__move__content1 {
+        padding-top: 16px;
+    }
+
+    .wrapper__move__content2 {
+        display: none;
+    }
+}
+
+/*----------------------
+        푸터 제어 끝.
+------------------------*/
